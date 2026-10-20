@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Responsive Product Pricing Cards</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="page-header">
+        <h1>Choose Your Perfect Plan</h1>
+        <p>Simple pricing for every stage of your journey.</p>
+    </header>
+
+    <main class="pricing-section">
+
+        <div class="billing-toggle">
+            <span>Monthly</span>
+            <button id="billing-toggle" type="button"
+                    aria-pressed="false">
+                Switch to Yearly
+            </button>
+            <span>Yearly</span>
+        </div>
+
+        <div class="pricing-container">
+
+            <!-- Starter Plan -->
+            <article class="pricing-card">
+                <h2>Starter</h2>
+                <p>Perfect for getting started.</p>
+
+                <p class="price">
+                    ₹<span class="price-value"
+                           data-monthly="199"
+                           data-yearly="1999">199</span>
+                    <span class="billing-period">/month</span>
+                </p>
+
+                <ul>
+                    <li>5 projects</li>
+                    <li>Basic support</li>
+                    <li>Essential features</li>
+                </ul>
+
+                <button class="plan-button" type="button">
+                    Get Started
+                </button>
+            </article>
+
+            <!-- Professional Plan -->
+            <article class="pricing-card popular">
+                <span class="plan-badge">Most Popular</span>
+
+                <h2>Professional</h2>
+                <p>For growing teams and creators.</p>
+
+                <p class="price">
+                    ₹<span class="price-value"
+                           data-monthly="499"
+                           data-yearly="4999">499</span>
+                    <span class="billing-period">/month</span>
+                </p>
+
+                <ul>
+                    <li>Unlimited projects</li>
+                    <li>Priority support</li>
+                    <li>Advanced features</li>
+                </ul>
+
+                <button class="plan-button" type="button">
+                    Choose Pro
+                </button>
+            </article>
+
+            <!-- Enterprise Plan -->
+            <article class="pricing-card">
+                <span class="plan-badge">Best Value</span>
+
+                <h2>Enterprise</h2>
+                <p>For businesses scaling up.</p>
+
+                <p class="price">
+                    ₹<span class="price-value"
+                           data-monthly="999"
+                           data-yearly="9999">999</span>
+                    <span class="billing-period">/month</span>
+                </p>
+
+                <ul>
+                    <li>Unlimited projects</li>
+                    <li>Dedicated support</li>
+                    <li>All premium features</li>
+                </ul>
+
+                <button class="plan-button" type="button">
+                    Contact Sales
+                </button>
+            </article>
+
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
